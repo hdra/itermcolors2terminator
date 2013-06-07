@@ -11,6 +11,7 @@ def rgb_to_hex(rgb):
     return '#%02x%02x%02x' % rgb
 
 
+# TODO: wrong conversion. iTerm uses sRGB
 def iterm_to_rgb(clr):
     rkey = 'Red Component'
     bkey = 'Blue Component'
@@ -52,7 +53,7 @@ The conversion results will be written to stdout.
 
 Example: ./convert.py symfony.itermcolors
          ./convert.py ~/iTerm-2-Color-Themes > terminatorschemes.txt"""
-    print msg
+    print msg + "\n"
     print instruction
     sys.exit(1)
 
