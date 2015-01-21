@@ -24,7 +24,7 @@ def format_terminator(bg, fg, csr, pallete, indent):
     conf = "{4}{0}\n{4}{1}\n{4}{2}\n{4}{3}".format('background_color = "{0}"'.format(bg),
                                                    'foreground_color = "{0}"'.format(fg),
                                                    'cursor_color = "{0}"'.format(csr),
-                                                   'palete = "{0}"'.format(':'.join(pallete)),
+                                                   'palette = "{0}"'.format(':'.join(pallete)),
                                                    ' '*indent)
     return conf
 
